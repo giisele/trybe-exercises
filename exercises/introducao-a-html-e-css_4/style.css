@@ -1,9 +1,41 @@
-* {
-    
+body {
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: .1px;
+    line-height: 33px;
+    font-family: Georgia, serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    border-top: 1px gray solid;
+}
+
+.footer, footer {
+    text-align: center;
+    border-top: 1px gray solid;
+    display: inline-block;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-top: 1em;    
+}
+
+
+main {
+    width: 67%;
+    display: inline-block;
+    float: left;
+    padding-right: 30px;
 }
 
 aside {
-    
+    border-left: 1px gray solid;
+    padding-left: 30px;
+    width: 27%;
+    display: inline-block;
+    float: right;
 }
 
 td, th {
@@ -20,45 +52,48 @@ th, #reference h3 {
     border-color: white;
 }
 
-.general_info {
+h1 {
+    margin-bottom: 50px;
+    margin-top: 40px;    
+}
 
+h2, h3 {
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+
+.header {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px gray solid;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
 }
 
 #heart {
     color: red
 }
 
-header, nav, ul, li, main, article, section, aside, footer, table {
-    border: 3px solid #ccc;
-    margin: 1px;
-}
-header {
-    background-color: lightblue;
-}
-nav {
-    background-color: lightcoral;
-}
-ul {
-    background-color: lightcyan;
-}
-li {
-    background-color: lightgoldenrodyellow;
-}
-main {
-    background-color: lightgray;
-}
-article {
-    background-color: lightgreen;
-}
-section {
-    background-color: lightpink;
-}
-aside {
-    background-color: lightsalmon;
-}
-footer {
-    background-color: lightskyblue;
-}
-table {
-    background-color: lightsteelblue;
+img {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
 }
