@@ -1,0 +1,64 @@
+* {
+    
+}
+
+aside {
+    
+}
+
+td, th {
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+th, #reference h3 {
+    background: lightblue;
+    border-color: white;
+}
+
+.general_info {
+
+}
+
+#heart {
+    color: red
+}
+
+header, nav, ul, li, main, article, section, aside, footer, table {
+    border: 3px solid #ccc;
+    margin: 1px;
+}
+header {
+    background-color: lightblue;
+}
+nav {
+    background-color: lightcoral;
+}
+ul {
+    background-color: lightcyan;
+}
+li {
+    background-color: lightgoldenrodyellow;
+}
+main {
+    background-color: lightgray;
+}
+article {
+    background-color: lightgreen;
+}
+section {
+    background-color: lightpink;
+}
+aside {
+    background-color: lightsalmon;
+}
+footer {
+    background-color: lightskyblue;
+}
+table {
+    background-color: lightsteelblue;
+}
