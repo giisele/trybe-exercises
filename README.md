@@ -10,20 +10,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Introdução - Desenvolvimento Web :hourglass_flowing_sand: 
 
-#### Bloco 1: Introdução - Unix & Shell
+#### Bloco 01: Introdução - Unix & Shell
 
 - [x] 1-3: _Fundamentos do Desenvolvimento Web_
 - [x] 1-3: _Introdução - Unix & Shell_
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
 
-#### Bloco 2: Git & GitHub
+#### Bloco 02: Git & GitHub
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-#### Bloco 3: Introdução - HTML & CSS
+#### Bloco 03: Introdução - HTML & CSS
 
 - [x] 3-1: _Introdução - HTML & CSS_
 - [x] 3-2: _HTML & CSS - Estruturas de página_
@@ -32,7 +32,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 3-5: _HTML Semântico_
 - [x] 3-6: _[Projeto - Lessons Learned]()_
 
-#### Bloco 4: Introdução - JavaScript
+#### Bloco 04: Introdução - JavaScript
 
 - [x] 4-1: _Introdução - JavaScript_
 - [x] 4-1: _JavaScript - Primeiros passos_
@@ -41,7 +41,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto: Playground Functions]()_
 
-#### Bloco 5: JavaScript: DOM, Eventos e Web Storage
+#### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
 - [ ] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
@@ -54,7 +54,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
-#### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
+#### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [ ] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
