@@ -39,7 +39,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _Projeto: Playground Functions_
+- [ ] 4-5: _[Projeto: Playground Functions]()_
 
 #### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
@@ -82,9 +82,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 #### Bloco 09: JavaScript Assíncrono e Promises
 
-- [] 9-1: _JavaScript Assíncrono e Callbacks_
-- [] 9-2: _JavaScript Promises_
-- [] 9-3: _[Projeto - Carrinho de Compras]()_
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [ ] 9-2: _JavaScript Promises_
+- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
 #### Bloco 10: Testes automatizados com Jest
 
