@@ -81,12 +81,12 @@ function chess(chess) {
 // O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 function notas(nota) {
   switch (nota) {
-    case (nota >= 90): return console.log('A'):
-    case (nota >= 80): return console.log('B'):
-    case (nota >= 70): return console.log('C'):
-    case (nota >= 60): return console.log('D'):
-    case (nota >= 50): return console.log('E'):
-    case (nota < 50): return console.log('F'):
+    case (nota >= 90): return console.log('A');
+    case (nota >= 80): return console.log('B');
+    case (nota >= 70): return console.log('C');
+    case (nota >= 60): return console.log('D');
+    case (nota >= 50): return console.log('E');
+    case (nota < 50): return console.log('F');
     default: return console.log('ERRO');
   }
 }
@@ -99,7 +99,7 @@ function par(a, b, c) {
 }
 
 //Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false. Bonus: use somente um if.
-funcion impar(a, b, c) {
+function impar(a, b, c) {
   if ((a % 2) === 1 || (b % 2) === 1 ||(c % 2) === 1) return console.log(true);
   else return console.log(false);
 }
@@ -111,7 +111,7 @@ funcion impar(a, b, c) {
 //O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
 //    valorCustoTotal = valorCusto + impostoSobreOCusto
 //    lucro = valorVenda - valorCustoTotal (lucro de um produto)
-function (valorCusto, valorVenda) {
+function lucro(valorCusto, valorVenda) {
   if (valorCusto < 0 || valorVenda < 0) return console.log('ERRO');
   else {
     let valorCustoTotal = 1.2 * valorCusto;
