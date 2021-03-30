@@ -8,15 +8,9 @@
 let palindromo;
 
 function isPalindrome(word) {
-  let n = word.length;
-
-  for (let index = 0; index < n; index += 1){
-    if (word[index] !== word[n-1]) {
-      return false;
-    }
-    n -=1;
+  for (let index = 0; index < Math.ceil(word.length / 2); index += 1){
+    if (word[index] !== word[word.length - 1 - index]) return false;
   }
-
   return true;
 }
 
