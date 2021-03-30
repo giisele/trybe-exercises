@@ -4,7 +4,7 @@
 
 
 function add(num1, num2) {
-  let numMax, numMin, strSum = [0,0,0,0,0], sum, difference;
+  let numMax, numMin, strSum = [], difference;
   
   // checa pra ver qual é o maior
   if (num1 < num2) {
@@ -36,8 +36,8 @@ function add(num1, num2) {
     strSum[index] = parseInt(strMax[index]) + parseInt(strMin[index]);
   }
 
-  // junta os conteúdos do array em uma string
-  sum = strSum.join('');
+  // junta os conteúdos do array em uma string e transforma em inteiro
+  let sum = parseInt(strSum.join(''));
 
   return sum;
 }
