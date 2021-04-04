@@ -22,14 +22,14 @@
 
 // https://javascript.plainenglish.io/algorithms-101-convert-roman-numerals-to-integers-in-javascript-d3aba86a43d4
 
-const conversion = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+const conversion = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000};
 
 
 function romanToInt(string) {
   const array = string.split('');
   let total = 0, current, currentValue, next, nextValue;
   
-  for (let index = 0; index < array.length; index += 1){
+  for (let index = 0; index < array.length; index += 1) {
     current = array[index];
     currentValue = conversion[current];
     next = array[index + 1];
@@ -40,4 +40,4 @@ function romanToInt(string) {
   return total;
 }
 
-console.log(romanToInt('IMMDCV'));
+console.log(romanToInt('MMDCIV'));
