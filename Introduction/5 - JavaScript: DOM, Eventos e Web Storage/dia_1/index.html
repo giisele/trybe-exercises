@@ -51,22 +51,41 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-      document.getElementsByTagName('p')[0].innerText = 'Daqui dois anos me vejo sendo rica e famosa! #ryca';
-      document.getElementsByTagName('p')[0].style.textAlign = 'center';
-      
-      document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
-
-      document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
-
-      document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
-
-      for (let index = 0; index < document.getElementsByTagName('p').length; index += 1){
-        document.getElementsByTagName('p')[index].style.textTransform = 'uppercase';
+      function yearsFromNow() {
+        document.getElementsByTagName('p')[0].innerText = 'Daqui dois anos me vejo sendo rica e famosa! #ryca';
+        document.getElementsByTagName('p')[0].style.textAlign = 'center';
       }
 
-      for (let index = 0; index < document.getElementsByTagName('p').length; index += 1){
-        console.log(document.getElementsByTagName('p')[index].innerText);
+      function colorMain() {
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
       }
+
+      function colorCenter() {
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+      }
+
+      function correctionTitle() {
+        document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+      }
+
+      function uppercaseP() {
+        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+          document.getElementsByTagName('p')[index].style.textTransform = 'uppercase';
+        }
+      }
+
+      function consoleP() {
+        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+          console.log(document.getElementsByTagName('p')[index].innerText);
+        }
+      }
+
+      yearsFromNow();
+      colorMain();
+      colorCenter();
+      correctionTitle();
+      uppercaseP();
+      consoleP();
     </script>
   </body>
 </html>
