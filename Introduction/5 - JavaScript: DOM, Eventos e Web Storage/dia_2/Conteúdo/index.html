@@ -7,16 +7,16 @@
   <title>Document</title>
 </head>
 <body>  
-  <div id="paiDoPai">
-    <div id="pai">
-      <div id="primeiroFilho"></div>
-      <div id="elementoOndeVoceEsta">
-        <div id="primeiroFilhoDoFilho"></div>
-        <div id="segundoEUltimoFilhoDoFilho"></div>
+  <div id="paiDoPai">paiDoPai
+    <div id="pai">pai
+      <div id="primeiroFilho">primeiroFilho</div>
+      <div id="elementoOndeVoceEsta">elementoOndeVoceEsta
+        <div id="primeiroFilhoDoFilho">primeiroFilhoDoFilho</div>
+        <div id="segundoEUltimoFilhoDoFilho">segundoEUltimoFilhoDoFilho</div>
       </div>
       Atenção!
-      <div id="terceiroFilho"></div>
-      <div id="quartoEUltimoFilho"></div>
+      <div id="terceiroFilho">terceiroFilho</div>
+      <div id="quartoEUltimoFilho">quartoEUltimoFilho</div>
     </div>
   </div>
   <script>
@@ -27,7 +27,7 @@
     document.getElementById('elementoOndeVoceEsta').parentElement.style.color = 'salmon';
 
     // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-    document.getElementById('primeiroFilhoDoFilho').textContent = 'Eu sou o primeiroFilhoDoFilho';
+    document.getElementById('primeiroFilhoDoFilho').textContent = 'primeiroFilhoDoFilho';
 
     // Acesse o primeiroFilho a partir de pai .
     console.log(document.getElementById('pai').firstChild);
@@ -67,6 +67,15 @@
     
     // A partir desse filho criado, acesse terceiroFilho
     console.log(document.getElementById('gran').parentNode.parentNode.nextElementSibling);
+
+    // Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+    sonElement.removeChild(gran);
+    meElement.removeChild(child);
+    dadElement.removeChild(sibling);
+    pai.removeChild(quartoEUltimoFilho);
+    pai.removeChild(terceiroFilho);
+    elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho);
+    pai.removeChild(primeiroFilho);
   </script>
 </body>
 </html>
