@@ -98,6 +98,7 @@
       divRight.appendChild(ul);
       for (let index = 0; index < 10; index += 1) {
         let li = document.createElement('li');
+        li.className = 'li';
         switch (index) {
           case 0: li.innerText = 'Um'; break;
           case 1: li.innerText = 'Dois'; break;
@@ -140,6 +141,13 @@
       divMain.style.backgroundColor = 'green';
 
       // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+      let allItems = document.querySelectorAll('.li');
+      for (let index = 0; index < 11; index += 1) {
+        let element = allItems[index];
+        if (element.innerText.includes('Nove') || element.innerText.includes('Dez')) {
+          ul.removeChild(element);
+        }
+      }
     </script>
   </body>
 </html>
