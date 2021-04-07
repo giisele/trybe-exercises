@@ -11,6 +11,29 @@ function createDaysOfTheWeek() {
   };
 };
 
+function createDaysOfTheMonth() {
+  const aprDays = [28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+  const aprDaysList = document.querySelector('#days');
+
+  for (let index = 0; index < aprDays.length; index += 1) {
+    const days = aprDays[index];
+    const dayListItem = document.createElement('li');
+    dayListItem.innerHTML = days;
+    dayListItem.className = 'day';
+
+    aprDaysList.appendChild(dayListItem);
+
+    if (days === 2 || days === 9 || days == 16 || 
+        days === 23 || days === 30) {
+      dayListItem.className = 'day friday';
+    }
+    if (days === 2 || days === 21) {
+      dayListItem.className = 'day holiday';
+    }
+  };
+};
+
+createDaysOfTheMonth();
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
