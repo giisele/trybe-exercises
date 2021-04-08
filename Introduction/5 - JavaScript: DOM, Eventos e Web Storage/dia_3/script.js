@@ -16,29 +16,20 @@ createDaysOfTheWeek();
 // Ex. 1
 function isFriday(day) {
   switch(day) {
-    case 4:
-      return true;
-    case 11:
-      return true;
-    case 18:
-      return true;
-    case 25:
-      return true;
-    default:
-      return false;
+    case 4: return true;
+    case 11: return true;
+    case 18: return true;
+    case 25: return true;
+    default: return false;
   }
 }
 
 function isHoliday(day) {
   switch(day) {
-    case 24:
-      return true;
-    case 25:
-      return true;
-    case 31:
-      return true;
-    default:
-      return false;
+    case 24: return true;
+    case 25: return true;
+    case 31: return true;
+    default: return false;
   }
 }
 
@@ -59,9 +50,7 @@ function createDaysOfTheMonth() {
       dayListItem.classList.add('friday');
       dayListItem.dataset.day = days;
     }
-    if (isHoliday(days)) {
-      dayListItem.classList.add('holiday');
-    }
+    if (isHoliday(days)) dayListItem.classList.add('holiday');
   }
 }
 
@@ -88,11 +77,8 @@ function toggleHolidaysHighlight() {
   const holidays = document.querySelectorAll('.holiday');
   let newColor;
 
-  if (areHolidaysHighlighted) {
-    newColor = 'rgb(238, 238, 238)';
-  } else {
-    newColor = 'white';
-  }
+  if (areHolidaysHighlighted) newColor = 'rgb(238, 238, 238)';
+  else newColor = 'white';
 
   for (let index = 0; index < holidays.length; index += 1) {
     holidays[index].style.backgroundColor = newColor;
@@ -124,11 +110,8 @@ function toggleFridaysText() {
   const fridays = document.querySelectorAll('.friday');
 
   for (let friday of fridays) {
-    if (areFridayYet) {
-      friday.innerText = friday.dataset.day;
-    } else {
-      friday.innerText = 'SEXTOU';
-    }
+    if (areFridayYet) friday.innerText = friday.dataset.day;
+    else friday.innerText = 'SEXTOU';
   }
 
   areFridayYet = !areFridayYet;
@@ -191,9 +174,8 @@ function clickTask(task) {
     taskSelected = undefined;
     classList.remove('task--selected');
   } else {
-    if(taskSelected) {
-      taskSelected.classList.remove('task--selected');
-    }
+    if (taskSelected) taskSelected.classList.remove('task--selected');
+    
     classList.add('task--selected');
     taskSelected = task.target;
   }
@@ -206,11 +188,32 @@ for (let day of dayTask) {
   day.addEventListener('click', function() {
     taskColor = document.querySelector('.task--selected').style.backgroundColor;
 
-    if (day.style.color === taskSelected.style.backgroundColor){
-      day.style.color = 'rgb(119, 119, 119)';
-    } else {
-      day.style.color = taskColor;
-    }
+    if (day.style.color === taskSelected.style.backgroundColor) day.style.color = 'rgb(119, 119, 119)';
+    else day.style.color = taskColor;
   });
 }
 
+// Ex. 11 (Bônus)
+let btnTask = document.querySelector('#btn-add');
+const input = document.querySelector('#task-input');
+
+input.addEventListener('keydown', function(a) {
+  if (a.key === 'Enter') addNewTask();
+})
+
+btnTask.addEventListener('click', addNewTask);
+
+function addNewTask() {
+  if (!input.value) alert ('ERRO');
+
+  const taskList = document.querySelector('.task-list');
+
+  const task = document.createElement('li');
+  task.innerText = input.value;
+
+  taskList.appendChild(task);
+
+  input.value = '';
+
+  input.focus();
+}
