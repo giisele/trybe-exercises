@@ -161,3 +161,17 @@ function addTask(task) {
 
 addTask('Cozinhar');
 addTask('Dormir');
+
+// Ex. 8
+function taskColor(color) {
+  const container = document.querySelector('.my-tasks');
+  const element = document.createElement('div');
+
+  element.style.backgroundColor = color;
+  element.className = 'task';
+
+  container.appendChild(element);
+}
+
+taskColor('lightblue');
+taskColor('lightsalmon');
