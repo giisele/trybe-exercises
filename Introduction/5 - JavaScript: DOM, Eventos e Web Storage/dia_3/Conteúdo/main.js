@@ -3,6 +3,7 @@ const divDois = document.getElementById('divDois');
 const divTres = document.getElementById('divTres');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('mySpotrybefy');
+const mainHeader = document.getElementById('main-header');
 
 divUm.addEventListener('click', addClass);
 divDois.addEventListener('click', addClass);
@@ -24,24 +25,29 @@ input.addEventListener('keyup', function() {
 });
 
 
-myWebpage.addEventListener('click', function(event) {
-  // Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
-  // 1. Que tal redirecionar para seu portifólio?
-
-  let id = event.target.id;
-  document.getElementById(id).innerHTML = '<a href=\'https://giisele.github.io/\' target=\'_blank\'>Meu top 3 do Spotrybefy</a>';
-  console.log(id.innerHTML);
-
-  // Usei apenas o 'click' e não 'dblclick' pois com dois cliques eu sou efetivamente redirecionada ao porfifólio, com 'dblclick' eu teria que clicar duas vezes pra ativar o link e depois mais uma vez pra abrir a página
+myWebpage.addEventListener('dblclick', function(event) {
+  // Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página. Que tal redirecionar para seu portifólio?
+  window.open('https://giisele.github.io/', '_blank');
 });
 
 myWebpage.addEventListener('mouseover', function(event) {
   // Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere a cor do mesmo;
-
   let id = event.target.id;
   document.getElementById(id).style.color = 'salmon';
 });
 
+
+// Função abaixo massa do colega Inácio - https://github.com/heyset/
+function togglePulsingGradient(e) {
+  if (e.type === 'mouseover') {
+    mainHeader.classList.add('pulsing-gradient');
+  } else {
+    mainHeader.classList.remove('pulsing-gradient');
+  }
+}
+
+mainHeader.addEventListener('mouseover', togglePulsingGradient);
+mainHeader.addEventListener('mouseleave', togglePulsingGradient);
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
