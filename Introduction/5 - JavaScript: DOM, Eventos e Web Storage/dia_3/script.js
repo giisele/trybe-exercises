@@ -184,7 +184,6 @@ for (let task of taskLabels) {
   task.addEventListener('click', clickTask);
 }
 
-
 function clickTask(task) {
   let classList = task.target.classList;
 
