@@ -148,3 +148,16 @@ function zoomOut(event) {
 
 daysId.addEventListener('mouseover', zoomIn);
 daysId.addEventListener('mouseout', zoomOut);
+
+// Ex. 7
+function addTask(task) {
+  const container = document.querySelector('.my-tasks');
+  const element = document.createElement('span');
+
+  element.innerHTML = task;
+
+  container.appendChild(element);
+}
+
+addTask('Cozinhar');
+addTask('Dormir');
