@@ -175,3 +175,27 @@ function taskColor(color) {
 
 taskColor('lightblue');
 taskColor('lightsalmon');
+
+// Ex. 9
+let taskSelected;
+const taskLabels = document.getElementsByClassName('task');
+
+for (let task of taskLabels) {
+  task.addEventListener('click', clickTask);
+}
+
+
+function clickTask(task) {
+  let classList = task.target.classList;
+
+  if (classList.contains('task--selected')) {
+    taskSelected = undefined;
+    classList.remove('task--selected');
+  } else {
+    if(taskSelected) {
+      taskSelected.classList.remove('task--selected');
+    }
+    classList.add('task--selected');
+    taskSelected = task.target;
+  }
+}
