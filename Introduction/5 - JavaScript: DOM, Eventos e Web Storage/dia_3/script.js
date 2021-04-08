@@ -13,6 +13,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
+// Ex. 1
 function isFriday(day) {
   switch(day) {
     case 4:
@@ -66,6 +67,7 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
+// Ex. 2
 function holidayButtonAdd(event) {
   const container = document.querySelector('.buttons-container');
   const btn = document.createElement('button');
@@ -78,6 +80,7 @@ function holidayButtonAdd(event) {
 
 holidayButtonAdd('Feriados');
 
+// Ex. 3
 let areHolidaysHighlighted = false;
 const holidayButton = document.getElementById('btn-holiday');
 
@@ -100,6 +103,7 @@ function toggleHolidaysHighlight() {
 
 holidayButton.addEventListener('click', toggleHolidaysHighlight);
 
+// Ex. 4
 function fridayButtonAdd(event) {
   const container = document.querySelector('.buttons-container');
   const btn = document.createElement('button');
@@ -112,6 +116,7 @@ function fridayButtonAdd(event) {
 
 fridayButtonAdd('Sexta-feira');
 
+// Ex. 5
 let areFridayYet = false;
 const fridayButton = document.getElementById('btn-friday');
 
