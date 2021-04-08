@@ -173,8 +173,8 @@ function taskColor(color) {
   container.appendChild(element);
 }
 
-taskColor('lightblue');
-taskColor('lightsalmon');
+taskColor('blue');
+taskColor('salmon');
 
 // Ex. 9
 let taskSelected;
@@ -198,3 +198,19 @@ function clickTask(task) {
     taskSelected = task.target;
   }
 }
+
+// Ex. 10
+let dayTask = document.querySelectorAll('.day');
+
+for (let day of dayTask) {
+  day.addEventListener('click', function() {
+    taskColor = document.querySelector('.task--selected').style.backgroundColor;
+
+    if (day.style.color === taskSelected.style.backgroundColor){
+      day.style.color = 'rgb(119, 119, 119)';
+    } else {
+      day.style.color = taskColor;
+    }
+  });
+}
+
