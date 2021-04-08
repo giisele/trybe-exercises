@@ -135,3 +135,16 @@ function toggleFridaysText() {
 }
 
 fridayButton.addEventListener('click', toggleFridaysText);
+
+// Ex. 6
+const daysId = document.getElementById('days');
+function zoomIn(event) {
+  event.target.style.fontSize = '2em';
+}
+
+function zoomOut(event) {
+  event.target.style.fontSize = null;
+}
+
+daysId.addEventListener('mouseover', zoomIn);
+daysId.addEventListener('mouseout', zoomOut);
