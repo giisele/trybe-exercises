@@ -175,7 +175,7 @@ function clickTask(task) {
     classList.remove('task--selected');
   } else {
     if (taskSelected) taskSelected.classList.remove('task--selected');
-    
+
     classList.add('task--selected');
     taskSelected = task.target;
   }
@@ -197,8 +197,8 @@ for (let day of dayTask) {
 let btnTask = document.querySelector('#btn-add');
 const input = document.querySelector('#task-input');
 
-input.addEventListener('keydown', function(a) {
-  if (a.key === 'Enter') addNewTask();
+input.addEventListener('keypress', function({key}) {
+  if (key === 'Enter') addNewTask();
 })
 
 btnTask.addEventListener('click', addNewTask);
@@ -207,13 +207,10 @@ function addNewTask() {
   if (!input.value) alert ('ERRO');
 
   const taskList = document.querySelector('.task-list');
-
   const task = document.createElement('li');
   task.innerText = input.value;
-
   taskList.appendChild(task);
 
   input.value = '';
-
   input.focus();
 }
