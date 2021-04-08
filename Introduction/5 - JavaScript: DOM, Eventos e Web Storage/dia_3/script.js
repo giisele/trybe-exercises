@@ -56,6 +56,7 @@ function createDaysOfTheMonth() {
 
     if (isFriday(days)) {
       dayListItem.classList.add('friday');
+      dayListItem.dataset.day = days;
     }
     if (isHoliday(days)) {
       dayListItem.classList.add('holiday');
@@ -64,8 +65,6 @@ function createDaysOfTheMonth() {
 }
 
 createDaysOfTheMonth();
-
-
 
 function holidayButtonAdd(event) {
   const container = document.querySelector('.buttons-container');
@@ -101,4 +100,33 @@ function toggleHolidaysHighlight() {
 
 holidayButton.addEventListener('click', toggleHolidaysHighlight);
 
+function fridayButtonAdd(event) {
+  const container = document.querySelector('.buttons-container');
+  const btn = document.createElement('button');
 
+  btn.id = 'btn-friday';
+  btn.innerHTML = event;
+
+  container.appendChild(btn);
+}
+
+fridayButtonAdd('Sexta-feira');
+
+let areFridayYet = false;
+const fridayButton = document.getElementById('btn-friday');
+
+function toggleFridaysText() {
+  const fridays = document.querySelectorAll('.friday');
+
+  for (let friday of fridays) {
+    if (areFridayYet) {
+      friday.innerText = friday.dataset.day;
+    } else {
+      friday.innerText = 'SEXTOU';
+    }
+  }
+
+  areFridayYet = !areFridayYet;
+}
+
+fridayButton.addEventListener('click', toggleFridaysText);
