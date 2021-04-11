@@ -1,3 +1,8 @@
+let year = document.getElementById('year');
+let month = document.getElementById('month');
+year.innerText = '2021';
+month.innerText = 'abril';
+
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
@@ -14,43 +19,50 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Ex. 1
-function isFriday(day) {
-  switch(day) {
-    case 4: return true;
-    case 11: return true;
-    case 18: return true;
-    case 25: return true;
-    default: return false;
+function isFriday(day, monthDay) {
+  let firstFriday = 2;
+  
+  for (let index = firstFriday; index < monthDay.length; index += 7) {
+    if (index === day) return true; 
   }
+  return false;
 }
 
 function isHoliday(day) {
   switch(day) {
-    case 24: return true;
-    case 25: return true;
-    case 31: return true;
+    case 2: return true;
+    case 21: return true;
     default: return false;
   }
 }
 
 function createDaysOfTheMonth() {
-  const dezDays = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  const monthDay = [28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
-  const dezDaysList = document.querySelector('#days');
-
-  for (let index = 0; index < dezDays.length; index += 1) {
-    const days = dezDays[index];
+  const monthDayList = document.querySelector('#days');
+  let cont = 1;
+  for (let index = 0; index < monthDay.length; index += 1) {
+    const days = monthDay[index];
     const dayListItem = document.createElement('li');
-    dayListItem.innerHTML = days;
-    dayListItem.className = 'day';
+    if (cont === monthDay[index]) {
+      dayListItem.innerHTML = days;
+      cont += 1;
 
-    dezDaysList.appendChild(dayListItem);
+      dayListItem.className = 'day';
 
-    if (isFriday(days)) {
-      dayListItem.classList.add('friday');
-      dayListItem.dataset.day = days;
+      if (isFriday(days, monthDay)) {
+        dayListItem.classList.add('friday');
+        dayListItem.dataset.day = days;
+      }
+
+      if (isHoliday(days)) dayListItem.classList.add('holiday');
+
+    } else {
+      dayListItem.innerHTML = '';
     }
-    if (isHoliday(days)) dayListItem.classList.add('holiday');
+    
+    monthDayList.appendChild(dayListItem);
+    
   }
 }
 
