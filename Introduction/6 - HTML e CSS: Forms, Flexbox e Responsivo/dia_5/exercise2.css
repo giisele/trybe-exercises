@@ -119,3 +119,19 @@ footer {
   margin-top: 36px;
   font-size: 0.85rem;
 }
+
+@media screen and (min-width: 768px) {
+  article, footer, #asides {
+    max-width: 780px;
+    margin: auto;
+  }
+
+  #asides {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  #asides .aside {
+    flex-basis: calc(50% - 6px);
+  }
+}
