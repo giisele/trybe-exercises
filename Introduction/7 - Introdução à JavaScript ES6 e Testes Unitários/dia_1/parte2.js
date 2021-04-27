@@ -1,9 +1,13 @@
 // Ecercício 1
+// Referencia:
+// fatorial recursivo: http://devfuria.com.br/logica-de-programacao/recursividade-fatorial/
 let fat = 1;
 const fatorial = (num) => {return fat = (num <= 1) ? 1 : num * fatorial(num - 1)}
 console.log(fatorial(5)); // 120
 
 // Exercício 2
+// Referencia:
+// map: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 const longestWord = (string) => {
   string = string.split(' ');
   const wordLength = string.map(word => word = word.length);
@@ -31,6 +35,8 @@ btn.addEventListener('click', () => {
 });
 
 // Exercício 4
+// Referencia:
+// replace: https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
 let string = 'Tryber x aqui';
 const param = 'Bebeto';
 const skills = ['JavaScript', 'HTML', 'CSS', 'Bash', 'Github'];
