@@ -20,28 +20,30 @@ const allLessons = {
 }
 
 // Exercício 1
-const studentMath = (object, value1, value2) => {
+const studentClass = (object, value1, value2) => {
   const allKeys = Object.keys(object);
   let sum = 0;
-  let length = 0;
 
   for (index in allKeys) {
-    if (object[allKeys[index]].materia === value1) sum += object[allKeys[index]][value2];
+    if (object[allKeys[index]].materia === value1) sum += object[allKeys[index]].numeroEstudantes;
   }
   return sum;
 }
-console.log(studentMath(allLessons, 'Matemática', 'numeroEstudantes'));
+console.log(studentClass(allLessons, 'Matemática'));
 
-/*
-1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+// Exercício 2
+const createReport = (object, professor) => {
+  const allValues = Object.values(object);
+  let students = 0;
+  let lessons = [];
 
-2. Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+  for (index in allValues) {
+    if (allValues[index].professor === professor) {
+      lessons.push(allValues[index].materia);
+      students += allValues[index].numeroEstudantes;
+    }
+  }
 
-console.log(createReport(allLessons, 'Maria Clara'))
-
-Output: {
-  professor: 'Maria Clara',
-  aulas: [ 'Matemática', 'Matemática' ],
-  estudantes: 30
-} 
-*/
+  return {professor: professor, aulas: lessons, estudantes: students};
+}
+console.log(createReport(allLessons, 'Maria Clara'));
