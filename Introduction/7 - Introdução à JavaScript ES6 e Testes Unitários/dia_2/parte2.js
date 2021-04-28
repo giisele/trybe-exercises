@@ -50,12 +50,11 @@ const studentsTotal = (object, key) => {
 }
 studentsTotal(allLessons, 'numeroEstudantes');
 
+// Exercício 7
+const getValueByNumber = (object, index) => Object.entries(object)[index][1];
+console.log(getValueByNumber(lesson1, 0));
+
 /*
-7. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
-
-  console.log(getValueByNumber(lesson1, 0));
-  // Output: 'Matématica'
-
 8. Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
 
   console.log(verifyPair(lesson3, 'turno', 'noite'));
