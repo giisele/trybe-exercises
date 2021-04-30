@@ -4,6 +4,6 @@ Desenvolva uma HOF que retorna o resultado de um sorteio. Esta HOF irá gerar um
 
 const random = (num, bet) => (num === bet) ? true : false;
 
-const draw = (bet, block) => block(Math.floor((Math.random() * 5) + 1), bet) ? 'Parabéns você ganhou' : 'Tente novamente';
+const draw = (bet, block) => block(Math.ceil(Math.random() * 5), bet) ? 'Parabéns você ganhou' : 'Tente novamente';
 
 console.log(draw(2, random));
