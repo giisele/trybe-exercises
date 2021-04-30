@@ -49,12 +49,12 @@ const dragonTurn = (block) => {
 
 const turnResult = () => {
   console.log(battleMembers);
-  return battleMembers = { mage, warrior, dragon };
+  return { mage, warrior, dragon };
 }
 
 const gameActions = {
   warriorTurn: warriorTurn(warriorDamage),
   mageTurn: mageTurn(mageMana),
   dragonTurn: dragonTurn(dragonDamage),
-  turnResult,
+  battleMembers: turnResult,
 };
