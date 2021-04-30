@@ -24,10 +24,13 @@ const battleMembers = { mage, warrior, dragon };
 const dragonDamage = () => dragon.damage = 15 + (Math.ceil(Math.random() * dragon.strength));
 
 // Exercício 2
-const warriorDamage = () => warrior.damage = warrior.strength + (Math.ceil(Math.random() * (warrior.strength * warrior.weaponDmg)));
+const warriorDamage = () => warrior.strength + (Math.ceil(Math.random() * (warrior.strength * warrior.weaponDmg)));
 
 // Exercício 3
-const mageMana = () => (mage.mana >= 15) ? mage.mana -= 15 : mage.damage = 'Não possui mana suficiente';
+const mageMana = () => 
+  mage.mana >= 15 
+  ? mage.mana -= 15 
+  : mage.damage = 'Não possui mana suficiente';
 
 const mageTurn = (block) => {
   return {
