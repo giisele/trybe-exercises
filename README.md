@@ -1,4 +1,4 @@
-# Trybe
+# [![trybe_50](https://user-images.githubusercontent.com/48166556/111015178-4e73cb80-8386-11eb-8513-331461ef8448.png)](https://www.betrybe.com) Trybe 
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Gisele Barres Costa](https://www.linkedin.com/in/giselecosta/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
