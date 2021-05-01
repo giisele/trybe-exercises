@@ -161,6 +161,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 <details>
   <summary>
   Bloco 11: Introdução - React
+</summary>
 
 - [ ] 11-1: _Introdução - Front-end_
 - [ ] 11-1: _Introdução - React_
@@ -175,6 +176,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   <summary>
   Bloco 12: Componentes com Estado, Eventos e Formulários com React
 </summary>
+
 - [ ] 12-1: _Components com estado e eventos_
 - [ ] 12-2: _Formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
@@ -186,6 +188,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   <summary>
   Bloco 13: Ciclo de Vida de Componentes e React Router
 </summary>
+
 - [ ] 13-1: _Ciclo de vida de componentes em React_
 - [ ] 13-2: _React Router_
 - [ ] 13-3: _[Projeto - Movie Cards Library CRUD]()_
@@ -197,6 +200,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   <summary>
   Bloco 14: Metodologias Ágeis
 </summary>
+
 - [ ] 14-1: _Metodologias Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
@@ -207,6 +211,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   <summary>
   Bloco 15: Testes automatizados com React Testing Library
 </summary>
+
 - [ ] 15-1: _RTL - Primeiros passos_
 - [ ] 15-2: _RTL - Mocks e Inputs_
 - [ ] 15-3: _RTL - Testando React Router_
@@ -234,6 +239,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   <summary>
   Bloco 17: Projeto React
 </summary>
+
 - [ ] 17-1: _[Projeto - Jogo de Trivia]()_
 
 </details>
