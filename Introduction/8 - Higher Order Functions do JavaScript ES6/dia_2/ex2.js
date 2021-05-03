@@ -72,4 +72,5 @@ const smallerName = () => {
   return nameBook;
 }
 
+console.log(smallerName());
 assert.strictEqual(smallerName(), 'Duna');
