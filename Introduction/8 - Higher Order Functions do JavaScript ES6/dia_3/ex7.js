@@ -63,21 +63,11 @@ const books = [
   },
 ];
 
-const expectedResult = [
-  'O Senhor dos Anéis',
-  'Fundação',
-  'O Chamado de Cthulhu',
-];
+const expectedResult = 'O Senhor dos Anéis';
 
-// Crie um array com o nome de todos os livros com mais de 60 anos de publicação
-const oldBooks = () => books.filter((book) => 2021 - book.releaseYear > 60).map((book) => book.name);
+// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Não consegui fazer sozinha, abaixo o gabarito
 
-// pelo gabarito dá pra fazer assim tbm, aí o ano atual muda dinamicamente
-/*
-function oldBooks() {
-  const currentYear = new Date().getFullYear();
-  return books.filter((book) => currentYear - book.releaseYear > 60).map((book) => book.name);
-}
-*/
+const authorWith3DotsOnName = () => books.find((book) => (book.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3)).name;
 
-assert.deepStrictEqual(oldBooks(), expectedResult);
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
