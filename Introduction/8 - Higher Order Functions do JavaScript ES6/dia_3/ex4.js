@@ -88,6 +88,16 @@ const expectedResult = [
 ];
 
 // Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho
-const oldBooks = () => books.filter((book) => (2021 - book.releaseYear) > 60).sort((a, b) => a.releaseYear - b.releaseYear);
+// const oldBooks = () => books.filter((book) => (2021 - book.releaseYear) > 60).sort((a, b) => a.releaseYear - b.releaseYear);
+
+// Abaixo como fizeram no gabarito, de uma maneira que o ano é atualizado de forma dinâmica
+
+function oldBooks() {
+  const currentYear = new Date().getFullYear();
+  return books.filter((book) => (
+    book.releaseYear < currentYear - 60
+  )).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
+}
+
 
 assert.deepStrictEqual(oldBooks(), expectedResult);
