@@ -103,8 +103,8 @@ const otherPerson = {
 // console.log(getNationality(person)); // João is undefined
 
 // Ajuste a função nationality para que a chamada getNationality(person) retorne João is Brazilian .
-const { firstName, nationality = 'Brazilian' } = person;
-const getNationality = (obj) => `${obj.firstName} is ${nationality}`;
+// infelizmente não consegui resolver com default destructuring, resolvi com default parameter
+const getNationality = ({ firstName, nationality = 'Brazilian' }) => `${firstName} is ${nationality}`;
 console.log(getNationality(otherPerson)); // Ivan is Russian
 console.log(getNationality(person));
 
@@ -122,3 +122,15 @@ const getPosition = (latitude, longitude) => ({
   longitude});
 
 console.log(getPosition(-19.8157, -43.9542)); // { latitude: -19.8157, longitude: -43.9542 }
+
+
+// default parameters
+const greeting = (user) => console.log(`Welcome ${user}!`);
+greeting(); // Welcome undefined!
+
+const greeting = (user = 'usuário') => console.log(`Welcome ${user}!`);
+greeting(); // Welcome usuário!
+
+// escreva uma função multiply que multiplique dois números passados como argumentos. Atribua como default o valor 1 caso não seja passado nenhum valor como segundo parâmetro.
+const multiply = (number, value = 1) => number * value;
+console.log(multiply(8));
