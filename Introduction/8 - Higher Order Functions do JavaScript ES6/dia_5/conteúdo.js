@@ -37,3 +37,35 @@ const printProductDetails = ({ name, price, seller }) => {
   console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
 };
 printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
+
+
+// array destructuring
+const arrayCountries = ['Brazil', 'Japan', 'China', 'Canada'];
+const [firstCountry, secondCountry, thirdCountry, fourthCountry] = arrayCountries;
+
+console.log(firstCountry); // Brazil
+console.log(secondCountry); // Japan
+console.log(thirdCountry); // China
+console.log(fourthCountry); // Canada
+
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+console.log(saudacoes[1](saudacoes[0])); // Olá
+// na verdade o console log acima tem resultado Olá undefined
+// Produza o mesmo resultado acima, porém utilizando array destructuring
+[saudações, undefined] = saudacoes;
+console.log(saudações);
+// não sei se entendi muito bem o que o exercicio acima estava pedindo, somente retirei o undefined
+
+let comida = 'gato';
+let animal = 'água';
+let bebida = 'arroz';
+
+// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
+[animal, bebida, comida] = [comida, animal, bebida];
+console.log(comida, animal, bebida); // arroz gato água
+
+let numerosPares = [1, 3, 5, 6, 8, 10, 12];
+
+// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
+[a, b, c, ...numerosPares] = numerosPares;
+console.log(numerosPares); // [6, 8, 10, 12]
