@@ -56,6 +56,11 @@ console.log(saudacoes[1](saudacoes[0])); // Olá
 console.log(saudações);
 // não sei se entendi muito bem o que o exercicio acima estava pedindo, somente retirei o undefined
 
+const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
+(saudacoes[1](saudacoes[0])); // Olá
+// Produza o mesmo resultado acima, porém utilizando array destructuring
+// agora com a modificação que me passaram via slack, eu não soube fazer
+
 let comida = 'gato';
 let animal = 'água';
 let bebida = 'arroz';
@@ -69,3 +74,37 @@ let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 // Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
 [a, b, c, ...numerosPares] = numerosPares;
 console.log(numerosPares); // [6, 8, 10, 12]
+
+
+// default destructuring
+const person = {
+  name: 'João',
+  lastName: 'Jr',
+  age: 34,
+};
+
+const { nationality = 'Brazilian' } = person;
+console.log(nationality); // Brazilian
+
+const getNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+
+const person = {
+    firstName: 'João',
+    lastName: 'Jr II',
+};
+
+const otherPerson = {
+    firstName: 'Ivan',
+    lastName: 'Ivanovich',
+    nationality: 'Russian',
+};
+
+// console.log(getNationality(otherPerson)); // Ivan is Russian
+// console.log(getNationality(person)); // João is undefined
+
+// Ajuste a função nationality para que a chamada getNationality(person) retorne João is Brazilian .
+const { firstName, nationality = 'Brazilian' } = person;
+const getNationality = (obj) => `${obj.firstName} is ${nationality}`;
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
+
