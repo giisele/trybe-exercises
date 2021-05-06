@@ -59,7 +59,9 @@ console.log(saudações);
 const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
 (saudacoes[1](saudacoes[0])); // Olá
 // Produza o mesmo resultado acima, porém utilizando array destructuring
-// agora com a modificação que me passaram via slack, eu não soube fazer
+// agora com a modificação que me passaram via slack
+const [saudacao, realizaSaudacao] = saudacoes;
+console.log (realizaSaudacao(saudacao));
 
 let comida = 'gato';
 let animal = 'água';
@@ -72,7 +74,7 @@ console.log(comida, animal, bebida); // arroz gato água
 let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 
 // Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
-[a, b, c, ...numerosPares] = numerosPares;
+[,,, ...numerosPares] = numerosPares;
 console.log(numerosPares); // [6, 8, 10, 12]
 
 
