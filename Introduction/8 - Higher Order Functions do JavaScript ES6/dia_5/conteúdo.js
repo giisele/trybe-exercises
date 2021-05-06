@@ -61,7 +61,7 @@ const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
 // Produza o mesmo resultado acima, porém utilizando array destructuring
 // agora com a modificação que me passaram via slack
 const [saudacao, realizaSaudacao] = saudacoes;
-console.log (realizaSaudacao(saudacao));
+realizaSaudacao(saudacao);
 
 let comida = 'gato';
 let animal = 'água';
