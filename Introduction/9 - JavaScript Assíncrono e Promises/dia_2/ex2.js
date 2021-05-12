@@ -9,7 +9,7 @@ const promise = new Promise((resolve, reject) => {
   }
 
   if (sum > 8000) {
-    return reject(sum);
+    return reject([sum]);
   }
   resolve(sum);
 })
