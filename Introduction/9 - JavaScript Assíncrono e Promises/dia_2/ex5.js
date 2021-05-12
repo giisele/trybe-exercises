@@ -1,3 +1,7 @@
+const { resolve } = require("node:path");
+
+const sumArray = (arr) => arr[0] + arr[1] + arr[2] + arr[3];
+
 const promise = new Promise((resolve, reject) => {
   const arr = [];
   let sum = 0;
@@ -14,5 +18,7 @@ const promise = new Promise((resolve, reject) => {
   resolve([sum/2, sum/3, sum/5, sum/10]);
 })
 
-.then(arr => console.log(`Promise resolvida! Soma dividida por 2, 3, 5 e 10: ${arr}`))
+.then(arr => sumArray(arr))
+.then((sum) => console.log(`A soma do array é ${sum}`))
 .catch(sum => console.log(`É mais de oito mil! Essa promise deve estar quebrada! Soma: ${sum}`));
+// não sei se era isso que era pra fazer
