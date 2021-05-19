@@ -1,4 +1,5 @@
 const { it, expect } = require('@jest/globals');
+
 const users = {
   4: { name: 'Mark' },
   5: { name: 'Paul' }
@@ -52,6 +53,7 @@ describe('getUsername - async/await (ex3)', () => {
 
   describe('when the user id does not exists', () => {
     it('returns an error', async () => {
+      expect.assertions(1);
       try {
         await getUserName(2);
       } catch (error) {
