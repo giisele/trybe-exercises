@@ -16,5 +16,4 @@ test('testa se a mensagem de erro é "number é indefinido"', () => {
   expect(() => { multiplyByTwo() }).toThrowError(new Error('number é indefinido'));
 });
 
-
 // npm test -- --verbose
