@@ -12,6 +12,7 @@ const getRepos = (url) => {
 
 // Dada a URL 'https://api.github.com/orgs/tryber/repos' , faça um teste que verifique que os repositórios 'sd-01-week4-5-project-todo-list' e 'sd-01-week4-5-project-meme-generator' se encontram nessa lista.
 it('gets a list of repositories names', () => {
+  expect.assertions(2);
   const url = 'https://api.github.com/orgs/tryber/repos';
   return getRepos(url).then(result => {
     expect(result).toContain('sd-01-week4-5-project-todo-list');
