@@ -1,10 +1,21 @@
-const hydrate = (string) => {
-  string = string.replace(/[^0-9]/g, '').split('');
-  let totalCount = 0;
-  for (index in string) totalCount += parseInt(string[index], 10);
-  if (totalCount === 1) return '1 copo de água';
-  return `${totalCount} copos de água`;
+const hydrate = (str) => {
+  const s = str.replace(/[^0-9]/g, '').split('').reduce((acc, curr) => acc + parseInt(curr), 0);
+  //for (index in string) totalCount += parseInt(string[index], 10);
+  return (s === 1) ? '1 copo de água' : `${s} copos de água`;
 };
+
+console.log(hydrate('7 capitinhasr, 4 jasiuf'));
+
+// abaixo o hydrate dos meninos da sala A. achei ela confusa e gigante
+function hydrate(string) {
+  return string.split(' ').map(Number).filter(Number).reduce((acc, curr) => acc + curr, 0) === 1 ?
+    `1 copo de água` : `${string.split(' ').map(Number).filter(Number).reduce((acc, curr) =>
+    acc + curr, 0)} copos de água`;
+}
+
+console.log(hydrate('7 capitinhasr, 4 jasiuf'));
+
+
 
 describe('Testa a função hydrate', () => {
   it('Testa se a função hydrate é definida', () => {
