@@ -6,10 +6,10 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-<details open>
+<details>
 
   <summary>
-    <b> Introdução - Desenvolvimento Web :hourglass_flowing_sand: </b>
+    <b> Introdução - Desenvolvimento Web ✅ </b>
   </summary>
   
   <details>
@@ -112,7 +112,7 @@ Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
 </details>
 
-<details open>
+<details>
 
   <summary>
 Bloco 08: Higher Order Functions do JavaScript ES6
@@ -123,7 +123,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions]()_
 
 </details>
 
@@ -133,9 +133,9 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   Bloco 09: JavaScript Assíncrono e Promises
 </summary>
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Promises_
+- [x] 9-3: _[Projeto - Carrinho de Compras]()_
 
 </details>
 
@@ -145,20 +145,20 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   Bloco 10: Testes automatizados com Jest
 </summary>
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-1: _Primeiros passos no Jest_
+- [x] 10-2: _Jest - Testes Assíncronos_
+- [x] 10-3: _Jest - Simulando comportamentos_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 </details>
 </details>
 
-<details>
+<details open>
   <summary>
-    <b> Desenvolvimento Front-end :hourglass_flowing_sand: </b>
+    <b> Desenvolvimento Front-end ⏳ </b>
   </summary>
 
-<details>
+<details open>
   <summary>
   Bloco 11: Introdução - React
 </summary>
@@ -270,7 +270,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 
 <details>
   <summary>
-    <b> Desenvolvimento Back-end :hourglass_flowing_sand: </b>
+    <b> Desenvolvimento Back-end ⏳ </b>
    </summary>
 
 <details>
@@ -457,7 +457,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 
 <details>
   <summary>
-    <b> Ciência da Computação :hourglass_flowing_sand: </b>
+    <b> Ciência da Computação ⏳ </b>
   </summary>
 
 <details>
