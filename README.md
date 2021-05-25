@@ -123,7 +123,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [x] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions](https://giisele.github.io/projects/8_zoo_functions)_
 
 </details>
 
@@ -135,7 +135,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Promises_
-- [x] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://giisele.github.io/projects/9_shopping_cart)_
 
 </details>
 
@@ -148,7 +148,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 - [x] 10-1: _Primeiros passos no Jest_
 - [x] 10-2: _Jest - Testes Assíncronos_
 - [x] 10-3: _Jest - Simulando comportamentos_
-- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://giisele.github.io/projects/10_jest)_
 
 </details>
 </details>
