@@ -158,20 +158,20 @@ Bloco 08: Higher Order Functions do JavaScript ES6
     <b> Desenvolvimento Front-end ⏳ </b>
   </summary>
 
-<details open>
+<details>
   <summary>
   Bloco 11: Introdução - React
 </summary>
 
-- [ ] 11-1: _Introdução - Front-end_
-- [ ] 11-1: _Introdução - React_
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-1: _Introdução - Front-end_
+- [x] 11-1: _Introdução - React_
+- [x] 11-1: _'Hello, world!' no React!_
+- [x] 11-2: _Componentes React_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://giisele.github.io/projects/11_movie_cards_library)_
 
 </details>
 
-<details>
+<details open>
 
   <summary>
   Bloco 12: Componentes com Estado, Eventos e Formulários com React
