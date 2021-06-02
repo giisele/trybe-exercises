@@ -41,7 +41,7 @@ class App extends React.Component {
   render() {
     return (
     <div>
-      <button style={{ backgroundColor: (this.state.numeroDeCliques % 2 === 0) ? 'lightgreen' : '#EFEFEF' }} onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
+      <button style={{ backgroundColor: (this.state.numeroDeCliques % 2 === 0) ? (this.state.numeroDeCliques === 0 ? 'yellow' : 'lightgreen') : '#EFEFEF' }} onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
       {/* Se você quisesse chamar, no elemento, um evento passando um parâmetro, você deveria trocar a sintaxe <button onClick{this.minhaFuncao} ...> por <button onClick={() => this.minhaFuncao('meu parametro')} . Basicamente, substitua a função do evento por uma chamada à mesma feita via callback! */}
       <button onClick={this.handleClick2}>{this.state.numeroDeCliques2}</button>
       <button onClick={this.handleClick3}>{this.state.numeroDeCliques3}</button>
