@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Users from './components/Users';
@@ -8,7 +8,7 @@ import StrictAccess from './components/StrictAccess';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <Switch>
           <Route path="/about" component={About} />
           {/* <Route path="/users" component={Users} /> */}
@@ -17,9 +17,9 @@ class App extends Component {
           <Route path="/strict-access" component={StrictAccess} />
           <Route path="/" component={Home} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
-// exemplo: <Route path="*" component={NotFound} /> 
+
 export default App;
