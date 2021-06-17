@@ -202,7 +202,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 </summary>
 
 - [x] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-2: _[Projeto - Frontend Online Store]()_
 
 </details>
 
