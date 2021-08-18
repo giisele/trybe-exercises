@@ -153,9 +153,9 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 </details>
 </details>
 
-<details open>
+<details>
   <summary>
-    <b> Desenvolvimento Front-end ⏳ </b>
+    <b> Desenvolvimento Front-end ✅ </b>
   </summary>
 
 <details>
@@ -244,16 +244,16 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 
 </details>
 
-<details open>
+<details>
 
   <summary>
   Bloco 18: React & Context API
 </summary>
 
 - [x] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-2: _React Hooks - useState e useContext_
+- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 </details>
 
@@ -263,26 +263,26 @@ Bloco 08: Higher Order Functions do JavaScript ES6
   Bloco 19: Projeto Final de Front-end
 </summary>
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto - App de Receitas]()_
 
 </details>
 </details>
 
-<details>
+<details open>
   <summary>
     <b> Desenvolvimento Back-end ⏳ </b>
    </summary>
 
-<details>
+<details open>
 
   <summary>
   Bloco 20: Introdução à SQL
 </summary>
 
-- [ ] 20-1: _Introdução - Back-end_
-- [ ] 20-1: _Introdução - Bancos de dados relacionais_
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-1: _Introdução - Back-end_
+- [x] 20-1: _Introdução - Bancos de dados relacionais_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
 - [ ] 20-3: _Filtrando dados de forma específica_
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
