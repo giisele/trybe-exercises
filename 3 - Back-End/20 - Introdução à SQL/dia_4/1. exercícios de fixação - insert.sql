@@ -13,9 +13,9 @@ INSERT INTO sakila.staff (first_name, last_name, address_id, store_id, username)
 
 -- 4. Selecione os cinco primeiros nomes e sobrenomes da tabela sakila.customer e cadastre essas pessoas como atores na tabela sakila.actor .
 INSERT INTO sakila.actor (first_name, last_name)
-SELECT sakila.customer.first_name, sakila.customer.last_name
+SELECT first_name, last_name
 FROM sakila.customer
-ORDER BY sakila.customer.first_name
+ORDER BY first_name
 LIMIT 5;
 
 -- 5. Cadastre três categorias de uma vez só na tabela sakila.category .
