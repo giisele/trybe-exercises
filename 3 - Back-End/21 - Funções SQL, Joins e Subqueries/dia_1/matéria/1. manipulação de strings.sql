@@ -26,8 +26,6 @@ SELECT SUBSTRING('Oi, eu sou uma string', 5, 2);
 -- então a string será extraída do índice inicial definido, até o seu final
 SELECT SUBSTRING('Oi, eu sou uma string', 5);
 
-
-
 -- Exemplos
 SELECT UCASE(title) FROM sakila.film LIMIT 10;
 SELECT LCASE(title) FROM sakila.film LIMIT 10;
