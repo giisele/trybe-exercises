@@ -273,7 +273,7 @@ Bloco 08: Higher Order Functions do JavaScript ES6
     <b> Desenvolvimento Back-end ⏳ </b>
    </summary>
 
-<details open>
+<details>
 
   <summary>
   Bloco 20: Introdução à SQL
@@ -283,20 +283,20 @@ Bloco 08: Higher Order Functions do JavaScript ES6
 - [x] 20-1: _Introdução - Bancos de dados relacionais_
 - [x] 20-1: _Banco de dados SQL_
 - [x] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One]()_
 
 </details>
 
-<details>
+<details open>
 
   <summary>
   Bloco 21: Funções SQL, Joins e Subqueries
 </summary>
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs, UNIONs e Subqueries_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs, UNIONs e Subqueries_
 - [ ] 21-3: _Stored Routines & Stored Functions_
 - [ ] 21-4: _[Projeto - Vocabulary Booster]()_
 
